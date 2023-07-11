@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+
+    <style>
+    .rectangle1 {
+        height: 900px;
+        width: 350px;
+        background-color: black;
+        margin: auto;
+        
+    }
+
+    
+    .pie {
+        position: absolute;
+        top: 20%;
+        left:39%;
+    }
+    /*
+    .circle1{
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        background: black;
+        position: absolute;
+        top: 20%;
+        left: 63%;
+        
+    }*/
+
+    .circle2{
+        height: 190px;
+        width: 190px;
+        border-radius: 100%;
+        background: black;
+        position: absolute;
+        top: 28%;
+        left: 43%;
+        
+    }
+
+    .type {
+        position: absolute;
+        top: 40%;
+        left: 47%;
+        text-align: center;
+        color: white;
+        
+    }
+
+    /*table {
+        position: absolute;
+        margin-top: -20px;
+        margin-left: -20px;
+        border: 4px;
+        border-width: 22px;
+        border-color: red;
+        color: antiquewhite;
+    }*/
+
+    .box1 {
+        height: 20px;
+        width: 20px;
+        background-color: #CA498C;
+        position: absolute;
+        top: 70%;
+        left: 42%;
+    }
+
+     .type1{
+        position: absolute;
+        top: 70%;
+        left: 47%;
+        color: white;
+    }
+    .type11{
+        position: absolute;
+        top: 70%;
+        left: 55%;
+        
+        color: white;
+    }
+
+    .box2 {
+        height: 20px;
+        width: 20px;
+        background-color: #FDE3DF;
+        position: absolute;
+        top: 75%;
+        left: 42%;
+    }
+    
+    .type2{
+        position: absolute;
+        top: 75%;
+        left: 47%;
+        color: white;
+    }
+    .type22{
+        position: absolute;
+        top: 75%;
+        left: 55%;
+        color: white;
+    }
+
+    .box3 {
+        height: 20px;
+        width: 20px;
+        background-color: #E6BFCE;
+        position: absolute;
+        top: 80%;
+        left: 42%;
+    }
+     .type3{
+        position: absolute;
+        top: 80%;
+        left: 47%;
+        text-align: center;
+        color: white;
+    }
+    .type33{
+        position: absolute;
+        top: 80%;
+        left: 55%;
+        
+        color: white;
+    }
+    .box4 {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 85%;
+        left: 42%;
+        background-color: #CF9BBD;
+    }
+
+     .type4{
+        position: absolute;
+        top: 85%;
+        left: 47%;
+        text-align: center;
+        color: white;
+    }
+    .type44{
+        position: absolute;
+        top: 85%;
+        left: 55%;
+        
+        color: white;
+    }
+
+    .rectangle2 {
+        height: 100px;
+        width: 300px;
+        background-color: #CF9BBD;
+        border-radius: 20px;
+        position: absolute;
+        top: 95%;
+        left: 39%;  
+    }
+
+    .head1 {
+        position: absolute;
+        top: 93%;
+        left:40% ;
+    }
+
+    .check1 {
+        position: absolute;
+        top: 103%;
+        left: 40%;
+    }
+
+    .check2 {
+        position: absolute;
+        top: 106%;
+        left: 40%;
+    }
+
+    .rectangle3 {
+        height: 100px;
+        width: 300px;
+        background-color: #CF9BBD;
+        border-radius: 20px;
+        position: absolute;
+        top: 113%;
+        left: 39%;  
+    }
+
+    .head2 {
+        position: absolute;
+        top: 111%;
+        left:40% ;
+    }
+
+    .check3 {
+        position: absolute;
+        top: 121%;
+        left: 40%;
+    }
+
+    .check4 {
+        position: absolute;
+        top: 124%;
+        left: 40%;
+    }
+
+    .bigbox {
+        height: 40px;
+        width: 350px;
+        position: absolute;
+        top: 134.1%;
+        left: 37.1%;
+        background-color: #CA498C;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .text {
+        position: absolute;
+        top: 135% ;
+        left: 42%;
+        font-size: 25px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="rectangle1">&nbsp;</div>
+    <!--<div class="circle1">&nbsp;</div>-->
+    <div class="pie"><img src="pie chart.png" height="300px"></div>
+    <div class="circle2">&nbsp;</div>
+    <div class="type">Total Expense<br> Rs.1448/-</div>
+    <div class="box1">&nbsp;</div>
+    <div class="type1">Rs.288/-</div>
+    <div class="type11">Food</div>
+    <div class="box2">&nbsp;</div>
+    <div class="type2">Rs.370/-</div>
+    <div class="type22">Travel</div>
+    <div class="box3">&nbsp;</div>
+    <div class="type3">Rs.550/-</div>
+    <div class="type33">Stationary</div>
+    <div class="box4">&nbsp;</div>
+    <div class="type4">Rs.240/-</div>
+    <div class="type44">Books</div>
+    <div class="rectangle2">&nbsp;</div>
+    <div class="head1"><h2>To give</h2></div>
+    <div class="check1">
+        <input type="checkbox"name="Serious" >
+        <label for="Serious">Rs.20/- for cab.(To Arya)</label><br>
+    </div>
+    <div class="check2">
+        <input type="checkbox"name="Sad" >
+        <label for="Sad">Rs.40/- for popcorn. (To Poorva)</label><br>
+    </div>
+
+    <div class="rectangle3">&nbsp;</div>
+    <div class="head2"><h2>To get</h2></div>
+    <div class="check3">
+        <input type="checkbox"name="Soot" >
+        <label for="Soot">Rs.20/- for cab.(From Arya)</label><br>
+    </div>
+    <div class="check4">
+        <input type="checkbox"name="hap" >
+        <label for="hap">Rs.40/- for popcorn. (From Poorva)</label><br>
+    </div>
+    <div class="bigbox">&nbsp;</div>
+    <div class="text"><b>Balance= Rs.1000/-</b></div>
+
+
+    <!--<table>
+        <tbody>
+            <tr>
+                
+                <td>&nbsp;</td>
+                <td>Rs.240/-</td>
+                <td> Food</td>
+            </tr>
+            
+        </tbody>
+    </table>-->
+
+</body>
+</html>
+
+
+<!--
+NOTES~
+
+
+
+dropdown list using select tag
+<select>
+    <option value="india">India </option>
+    <option value="Bangladesh"> Bangladesh</option>
+</select>
+
+
+all tags
+<blockquote>
+
+input and label tag  
+<input ><label> <placeholder>
+
+<pre> writes as we type with spacing and line breaks. usually uses monospace as a font
+<abbr> in-line tag. abbrevation?
+
+dd,dl- discpritive tag.
+adress is a formating tag
+
+
+<iframe src="" frameborder="0"></iframe> tag syntax
+
+
+
+-->
