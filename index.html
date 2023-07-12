@@ -218,11 +218,11 @@
     <div id="over1">
     <div id="myDIV" class="header">
         <div class="title"><h2 style="margin:5px">To Give</h2></div>
-        <input type="text" id="myInput1" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn1">Add</span>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn"><b>Add</b></span>
       </div>
       
-      <ul id="myUL1">
+      <ul id="myUL">
         <li>Rs.20/- for cab. (To Arya)</li>
         <li class="checked">Rs.40/- for cab. (To Poorva)</li>
         
@@ -232,11 +232,11 @@
       <div id="over2">
     <div id="myDIV" class="header">
         <div class="title"><h2 style="margin:5px">To Get</h2></div>
-        <input type="text" id="myInput1" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn1">Add</span>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn"><b>Add</b></span>
       </div>
       
-      <ul id="myUL1">
+      <ul id="myUL">
         <li>Rs.20/- for cab. (To Arya)</li>
         <li class="checked">Rs.40/- for cab. (To Poorva)</li>
         
@@ -318,15 +318,15 @@ list.addEventListener('click', function(ev) {
 
 function newElement() {
   var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput1").value;
+  var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    document.getElementById("myUL1").appendChild(li);
+    document.getElementById("myUL").appendChild(li);
   }
-  document.getElementById("myInput1").value = "";
+  document.getElementById("myInput").value = "";
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
