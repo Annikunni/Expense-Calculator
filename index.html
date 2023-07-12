@@ -232,11 +232,11 @@
       <div id="over2">
     <div id="myDIV" class="header">
         <div class="title"><h2 style="margin:5px">To Get</h2></div>
-        <input type="text" id="myInput2" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn2">Add</span>
+        <input type="text" id="myInput1" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn1">Add</span>
       </div>
       
-      <ul id="myUL2">
+      <ul id="myUL1">
         <li>Rs.20/- for cab. (To Arya)</li>
         <li class="checked">Rs.40/- for cab. (To Poorva)</li>
         
@@ -344,62 +344,7 @@ function newElement() {
   }
 }
 
-/*2nd box*/
 
-var myNodelist = document.getElementsByTagName("JI");
-var j;
-for (j = 0; j < myNodelist.length; j++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[j].appendChild(span);
-}
-
-    
-var close = document.getElementsByClassName("close");
-var j;
-for (j = 0; j < close.length; j++) {
-  close[j].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'JI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
-function newElement() {
-  var ji = document.createElement("ji");
-  var inputValue = document.getElementById("myInput2").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL2").appendChild(ji);
-  }
-  document.getElementById("myInput2").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  ji.appendChild(span);
-
-  
-
-  for (j = 0; j < close.length; j++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
 
 
 
