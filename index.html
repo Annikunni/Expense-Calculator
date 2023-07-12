@@ -7,7 +7,9 @@
     <title>Document</title>
     <style>
         body{
+            min-width: 250px;
             background-color: black;
+            font-family:'Brush Script MT', cursive;
         }
         .head {
             color: #CA498C;
@@ -97,103 +99,113 @@
             font-size: 30px;
         }
 
-        body {
-         margin: 0;
-         min-width: 250px;
+
+        #over1 {
+          margin-top: 80px;
+          margin-bottom: 20px;
+          border:3px double white;
+          
         }
 
+        #over2 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          border:3px double white;
+        }
+
+
         ul {
-  margin: 0;
-  padding:0;
-}
+          margin: 0;
+          padding:0;
+        }
 
-ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  list-style-type: none;
-  background: #eee;
-  font-size: 18px;
-  transition: 0.2s;
-}
+        ul li {
+          cursor: pointer;
+          position: relative;
+          padding: 12px 8px 12px 40px;
+          list-style-type: none;
+          background: #CF9BBD;
+          font-size: 18px;
+          transition: 0.2s;
+        }
 
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
+        ul li:nth-child(odd) {
+          background: #E6BFCE;
+        }
 
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
-
-
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
+        ul li.checked {
+          background: black;
+          color: #fff;
+          text-decoration: line-through;
+        }
 
 
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-  background-color: #f44336;
-  color: white;
-}
-
-
-.header {
-  background-color: black;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
-}
+        ul li.checked::before {
+          content: '';
+          position: absolute;
+          border-color: #CA498C;
+          border-style: solid;
+          border-width: 0 2px 2px 0;
+          top: 10px;
+          left: 16px;
+          transform: rotate(45deg);
+          height: 15px;
+          width: 7px;
+        }
 
 
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        .close {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 12px 16px 12px 16px;
+        }
 
 
-.input {
-  margin: 0;
-  border: none;
-  border-radius: 5px;
-  width: 50%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
-}
+        .header {
+          background-color: black;
+          padding: 30px 40px;
+          color: #CA498C;
+          text-align: center;
+        }
+
+        .title {
+          margin-bottom: 40px;
+          font-size: 30px;
+        }
 
 
-.addBtn {
-    margin-left: 20px;
-  padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 5px;
-}
+        .header:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+
+        input {
+          margin: 0;
+          border: none;
+          border-radius: 5px;
+          width: 50%;
+          padding: 10px;
+          float: left;
+          font-size: 16px;
+        }
+
+
+        .addBtn {
+          margin-left: 20px;
+          padding: 10px;
+          width: 25%;
+          background: black;
+          color: white;
+          float: left;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+          transition: 0.3s;
+          border-radius: 5px;
+        }
 
 .addBtn:hover {
   background-color: #bbb;
@@ -203,20 +215,36 @@ ul li.checked::before {
 </head>
 <body>
 
+    <div id="over1">
     <div id="myDIV" class="header">
-        <h2 style="margin:5px">To Give</h2>
+        <div class="title"><h2 style="margin:5px">To Give</h2></div>
         <input type="text" id="myInput" placeholder="Title...">
         <span onclick="newElement()" class="addBtn">Add</span>
       </div>
       
       <ul id="myUL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
+        <li>Rs.20/- for cab. (To Arya)</li>
+        <li class="checked">Rs.40/- for cab. (To Poorva)</li>
         
       </ul>
+      </div>
+
+      <div id="over2">
+    <div id="myDIV" class="header">
+        <div class="title"><h2 style="margin:5px">To Give</h2></div>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Rs.20/- for cab. (To Arya)</li>
+        <li class="checked">Rs.40/- for cab. (To Poorva)</li>
+        
+      </ul>
+      </div>
     
 
-    <div id="give">
+    <!--<div id="give">
         <h2><center>To Give</center></h2>
         <input type="checkbox"name="Soot" >
         <label for="Soot">Rs.20/- for cab.(To Arya)</label><br>
@@ -231,6 +259,8 @@ ul li.checked::before {
         <input type="checkbox"name="Sout" >
         <label for="Sout">Rs.40/- for travel.(From Arya)</label><br>
     </div>
+  -->
+  
     <div class="head"><h3>Expenses</h3></div>
     <div id="st">
         <div class="color0">&nbsp;</div>
